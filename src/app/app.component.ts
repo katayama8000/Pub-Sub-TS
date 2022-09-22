@@ -30,4 +30,14 @@ export class AppComponent {
   completeTodo(index: number) {
     this.todos[index].isCompleted = !this.todos[index].isCompleted;
   }
+
+  /**
+   *時間を判定
+   *日中は白、夜は黒
+   * @param number
+   */
+  isDayTime(number: number): boolean {
+    let hour = new Date().getHours();
+    return hour > number && hour < 18;
+  }
 }
