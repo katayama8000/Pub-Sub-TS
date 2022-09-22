@@ -35,6 +35,8 @@ export class AppComponent {
    *時間を判定
    *日中は白、夜は黒
    * @param number
+   * @returns
+   * @memberof AppComponent
    */
   isDayTime(number: number): boolean {
     let hour = new Date().getHours();
