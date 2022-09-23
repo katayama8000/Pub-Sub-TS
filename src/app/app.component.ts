@@ -16,8 +16,9 @@ export class AppComponent {
       let todo = new Todo();
       todo.name = this.newTodo;
       todo.isCompleted = false;
-      this.todos.push(todo);
+      this.todos = [...this.todos, todo];
       this.newTodo = '';
+      console.log(this.todos);
     } else {
       alert('please Enter Todo');
     }
