@@ -24,6 +24,11 @@ export class AppComponent implements OnInit {
       url: 'https://angular-todo-list-1e8a3.web.app/',
       site_name: 'Angular Todo List',
     });
+
+    this.meta.updateTag({
+      name: 'this is Angular Todo List',
+      content: 'Angular Todo List ver 1.0',
+    });
   }
 
   saveTodo() {
