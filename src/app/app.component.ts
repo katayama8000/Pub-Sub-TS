@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from './Todo';
 import { Meta } from '@angular/platform-browser';
-import { meta } from '../const/meta.const';
+import { meta } from './const/meta.const';
+import { UseService } from './service/use.service';
 
 @Component({
   selector: 'app-root',
