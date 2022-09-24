@@ -1,15 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Todo } from './Todo';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'todo-list';
   todos: Todo[] = [];
   newTodo: string;
+
+  constructor(private meta: Meta) {}
+
+  ngOnInit(): void {
+    this.meta.addTag({
+      name: 'description',
+      content: 'Angular Todo List',
+      charset: 'UTF-8',
+      httpEquiv: 'Content-Type',
+      scheme: 'UTF-8',
+      url: 'https://angular-todo-list-1e8a3.web.app/',
+      site_name: 'Angular Todo List',
+    });
+  }
 
   saveTodo() {
     if (this.newTodo) {
