@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from './Todo';
 import { Meta } from '@angular/platform-browser';
+import { meta } from '../const/meta.const';
 
 @Component({
   selector: 'app-root',
@@ -15,15 +16,7 @@ export class AppComponent implements OnInit {
   constructor(private meta: Meta) {}
 
   ngOnInit(): void {
-    this.meta.addTag({
-      name: 'description',
-      content: 'Angular Todo List',
-      charset: 'UTF-8',
-      httpEquiv: 'Content-Type',
-      scheme: 'UTF-8',
-      url: 'https://angular-todo-list-1e8a3.web.app/',
-      site_name: 'Angular Todo List',
-    });
+    this.meta.addTag(meta);
 
     this.meta.updateTag({
       name: 'this is Angular Todo List',
