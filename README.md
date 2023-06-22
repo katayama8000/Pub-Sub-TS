@@ -3,6 +3,10 @@
 - https://genzouw.com/entry/2021/02/10/080020/2179/
 ---
 ### commands
+- login
+```bash
+  gcloud auth application-default logins
+```
 - create topic
 ```bash
   gcloud pubsub topics create my-topic
