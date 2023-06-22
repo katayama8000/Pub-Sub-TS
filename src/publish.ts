@@ -15,7 +15,7 @@ const data = JSON.stringify({
 const pubSubClient = new PubSub({ projectId });
 pub(topicNameOrId, data);
 
-async function pub(topicNameOrId: string, data: any) {
+async function pub(topicNameOrId: string, data: string) {
   const dataBuffer = Buffer.from(data);
 
   try {

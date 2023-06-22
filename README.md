@@ -5,7 +5,7 @@
 ### commands
 - login
 ```bash
-  gcloud auth application-default logins
+  gcloud auth application-default login
 ```
 - create topic
 ```bash
