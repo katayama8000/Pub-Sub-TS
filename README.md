@@ -1,0 +1,2 @@
+- https://kiyobl.com/pubsub-firebase-functions/
+- https://cloud.google.com/nodejs/docs/reference/pubsub/latest#using-the-client-library
